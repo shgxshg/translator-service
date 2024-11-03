@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - nodebb-f24-translator
+name: Build and deploy Python app to Azure Web App - 313q-translator-service-f24
 
 on:
   push:
@@ -63,6 +63,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'nodebb-f24-translator'
+          app-name: '313q-translator-service-f24'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E9EF844E83149E8AA70EA7E1D9BE629 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFF2C0F8641C41E0A0FEB0703FCCBC7B }}
