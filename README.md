@@ -4,7 +4,7 @@ This repo contains a Python Flask web app that will perform live translations fo
 
 ## Fork this repo to use
 
-<img width="200" alt="image" src="https://github.com/CMU-17313Q/translator-service/assets/5557706/47e9c1fb-5b9d-41fc-b825-05994867388a">
+<img width="200" alt="image" src="https://github.com/CMU-17313Q/translator-service/blob/e309203e258cbf131717bfb7d33d06c9d1613b9e/assets/image.png">
 
 # Build and run locally
 
