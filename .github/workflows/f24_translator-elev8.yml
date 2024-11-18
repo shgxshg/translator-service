@@ -28,8 +28,17 @@ jobs:
           source venv/bin/activate
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install sentence_transformers --quiet
+          pip install --quiet pytest ipytest pytest-mock mock
 
+      - name: Run translation test
+        env:
+          OPEN_AI_KEY: ${{ secrets.OPEN_AI_KEY }}
+        run: |
+          pytest
+          
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
