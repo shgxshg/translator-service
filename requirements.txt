@@ -1,7 +1,7 @@
-Flask==3.0.0
-pytest==7.4.0
-openai==0.28
-regex
+# Flask==3.0.0
+# pytest==7.4.0
+# openai==0.28
+# regex
 # pytest 
 # ipytest 
 # pytest-mock 
